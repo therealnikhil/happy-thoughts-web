@@ -6,6 +6,9 @@
       "web"
     ]
   },
+  "scripts": {
+    "start": "yarn rw build"
+  },
   "devDependencies": {
     "@redwoodjs/core": "^0.12.0",
     "netlify-plugin-prisma-provider": "^0.3.0"
