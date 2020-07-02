@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'Chalkduster';
+  src:url('../public/Chalkduster.ttf.woff') format('woff'),
+      url('../public/Chalkduster.ttf.svg#Chalkduster') format('svg'),
+      url('../public/Chalkduster.ttf.eot'),
+      url('../public/Chalkduster.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --main-purple: #361483;
+  --main-green: #15FFCD;
+  --main-yellow: #DABD46;
+  --main-red: #D20808;
+  --dark-purple: #230A5C;
+  --tab-green: #00CCB9;
+  --tab-purple: #473080;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  font-family: 'Chalkduster';
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--dark-purple);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: .5em;
+}
+
+.navlink {
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.content {
+  margin-top: 2em;
+}
+
+.section {
+  left: 0;
+  right: 0;
+  padding: 32px;
+}
+
+.section.dark {
+  background-color: var(--dark-purple);
+}
+
+.section.dark.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.yellow-text {
+  color: var(--main-yellow);
+}
+
+.green-text {
+  color: var(--main-green);
+}
+
+h1 {
+  color: var(--main-green);
+}
+
+.logo-wrapper {
+  aspect-ratio: 1;
+}
+
+.logo {
+  width: 100%;
+  object-fit: contain;
+}
+
+p, li {
+  color: #fff;
+  font-family: "American Typewriter";
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 2em;
+}
+
+.donate-button {
+  color: #fff;
+  font-family: "American Typewriter";
+  background-color: var(--tab-green);
+  text-shadow: 2px 2px 8px rgba(150, 150, 150, 1);
+  padding: 1em 2em;
+  border-radius: 1em;
+}
+
+.donate-button:hover {
+  cursor: pointer;
+}
+
+.social-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2em auto;
+}
+
+.social {
+  width: 5em;
+  height: 5em;
+  margin: 1em;
+}
+
+.external-link, .external-link:hover, .external-link:visited {
+  color: var(--main-green);
+}
+
+li {
+  list-style-image: url("assets/checkmark.png");
+}
+
+h2 {
+  color: var(--tab-green);
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.divider {
+  padding: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  background-color: var(--dark-purple);
+}
+
+.circle {
+  height: 1em;
+  width: 1em;
+  border-radius: .5em;
+  background-color: var(--main-yellow);
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+.line {
+  flex: 1;
+  height: .25em;
+  border-radius: .125em;
+  background-color: var(--main-yellow);
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.step-img-wrapper {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.step-img-wrapper img {
+  width: 50%;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 767px) {
+  .logo-wrapper {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .logo-wrapper {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .logo-wrapper {
+    width: 10%;
+  }
+  p.center {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .half {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .half > div {
+    flex: 1;
+  }
+}
