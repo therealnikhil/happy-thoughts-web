@@ -36,7 +36,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--dark-purple);
+  background-color: var(--main-purple);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -61,7 +61,7 @@ body {
 }
 
 .section.dark {
-  background-color: var(--dark-purple);
+  background-color: var(--main-purple);
 }
 
 .section.dark.main {
@@ -151,7 +151,7 @@ h2 {
   flex-direction: row;
   justify-content: stretch;
   align-items: center;
-  background-color: var(--dark-purple);
+  background-color: var(--main-purple);
 }
 
 .circle {
@@ -184,6 +184,49 @@ h2 {
   object-fit: contain;
 }
 
+.countdown-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.countdown-box {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  padding: 2em;
+  border-radius: 2em;
+  background-color: var(--dark-purple);
+  text-shadow: 0px 2px 13px rgba(0, 0, 0, 0.5);
+  margin: .5em;
+}
+
+.countdown-box:after {
+  content: '';
+  display: block;
+}
+
+.countdown-label {
+  font-family: "Chalkduster";
+  text-align: center;
+  font-size: 1em;
+  color: var(--main-green);
+  margin: 0 0 1em 0;
+}
+
+.countdown-value {
+  font-family: "American Typewriter";
+  text-align: center;
+  font-size: 3em;
+  color: var(--main-yellow);
+  margin: 0;
+}
+
 @media only screen and (max-width: 767px) {
   .logo-wrapper {
     width: 50%;
@@ -212,5 +255,8 @@ h2 {
   }
   .half > div {
     flex: 1;
+  }
+  .countdown-box {
+    flex-basis: calc(20% - 1em);
   }
 }

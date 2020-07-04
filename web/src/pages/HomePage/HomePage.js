@@ -1,15 +1,24 @@
-import ProductLayout from 'src/layouts/ProductLayout'
-import Section from 'src/components/Section'
 import { Fragment } from 'react'
 
+import ProductLayout from 'src/layouts/ProductLayout/ProductLayout'
+import Section from 'src/components/Section/Section'
 import SectionDivider from 'src/components/SectionDivider/SectionDivider'
 import logo from 'src/assets/logo.png'
+import thought from 'src/assets/thought.png'
+import habit from 'src/assets/habit.png'
+import insight from 'src/assets/insight.png'
+import post from 'src/assets/post.png'
+import fb from 'src/assets/fb.png'
+import twitter from 'src/assets/twitter.png'
+import snapchat from 'src/assets/snapchat.png'
+import linkedin from 'src/assets/linkedin.png'
 import CheckList from 'src/components/CheckList/CheckList'
+import CountDown from 'src/components/CountDown/CountDown'
 
 const sections = [
   {
     name: 'Journal',
-    image: logo,
+    image: thought,
     list: [
       'Log your thoughts and reminisce over the happy ones.',
       'Rate your basic emotions - happiness, sadness, stress, fear and anger',
@@ -20,7 +29,7 @@ const sections = [
   },
   {
     name: 'Habits',
-    image: logo,
+    image: habit,
     list: [
       'Start healthy habits from us scientifically proven to improve mental health.',
       'View habits created by our users that have helped many others',
@@ -32,13 +41,22 @@ const sections = [
   },
   {
     name: 'Insights',
-    image: logo,
-    list: [''],
+    image: insight,
+    list: [
+      'View your moods by time of day, day of week, months of year',
+      'Use the mood timeline to recognize patterns in your mood, when your moods peak or get low',
+      'A calendar view of your habits',
+      'See your longest streaks for motivation',
+      'Compare your moods before and after starting habits',
+    ],
   },
   {
     name: 'Resources',
-    image: logo,
-    list: [''],
+    image: post,
+    list: [
+      'Receive additional mental health resources from us and the community',
+      'Favorite the ones you want to keep and view your favorites during tough times',
+    ],
   },
   {
     name: 'Putting It All Together - Dashboard',
@@ -56,22 +74,22 @@ const sections = [
 const social = [
   {
     name: 'Facebook',
-    logo: logo,
+    logo: fb,
     link: '#',
   },
   {
     name: 'Twitter',
-    logo: logo,
+    logo: twitter,
     link: '#',
   },
   {
     name: 'LinkedIn',
-    logo: logo,
+    logo: linkedin,
     link: '#',
   },
   {
     name: 'SnapChat',
-    logo: logo,
+    logo: snapchat,
     link: '#',
   },
 ]
@@ -140,6 +158,7 @@ const HomePage = () => {
           <span className="yellow-text">{`together`}</span>
           {`.`}
         </p>
+        <CountDown />
       </Section>
       <Section dark={true} name="main">
         <h1>
