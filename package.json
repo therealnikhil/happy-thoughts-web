@@ -7,9 +7,9 @@
     ]
   },
   "scripts": {
-    "start": "yarn rw build"
+    "start": "yarn redwood build"
   },
-  "devDependencies": {
+  "dependencies": {
     "@redwoodjs/core": "^0.12.0",
     "netlify-plugin-prisma-provider": "^0.3.0"
   },
