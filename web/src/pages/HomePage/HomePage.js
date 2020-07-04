@@ -60,7 +60,7 @@ const sections = [
   },
   {
     name: 'Putting It All Together - Dashboard',
-    image: logo,
+    image: null,
     list: [
       'Quote of the day to keep you motivated',
       'See how many more journal logs needed to reach your daily goal',
