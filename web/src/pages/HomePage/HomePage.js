@@ -56,6 +56,7 @@ const sections = [
     list: [
       'Receive additional mental health resources from us and the community',
       'Favorite the ones you want to keep and view your favorites during tough times',
+      'Share things you find helpful, so others may benefit too!',
     ],
   },
   {
