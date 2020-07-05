@@ -12,6 +12,9 @@ const ProductLayout = ({ children }) => {
         </Link>
       </div>
       <div className="content">{children}</div>
+      <div className="footer">
+        <p>Copyright &copy; 2020 Happy Thoughts All Rights Reserved</p>
+      </div>
     </div>
   )
 }

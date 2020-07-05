@@ -92,12 +92,16 @@ h1 {
   object-fit: contain;
 }
 
-p, li {
+p, pre, li {
   color: #fff;
   font-family: "American Typewriter";
   margin-top: 1em;
   margin-bottom: 1em;
   line-height: 2em;
+}
+
+.left {
+  align-self: flex-start;
 }
 
 .donate-button {
@@ -225,6 +229,19 @@ h2 {
   font-size: 3em;
   color: var(--main-yellow);
   margin: 0;
+}
+
+.donate-button-anchor {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: var(--dark-purple);
+}
+
+.footer > p {
+  text-align: center;
+  color: var(--main-green);
 }
 
 @media only screen and (max-width: 767px) {

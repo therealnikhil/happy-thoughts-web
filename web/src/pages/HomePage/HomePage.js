@@ -201,7 +201,7 @@ const HomePage = () => {
       <SectionDivider />
       <Section dark={true} name="support">
         <h2>Support the Cause</h2>
-        <p className="center" style={{ marginTop: '5em' }}>
+        <p className="center" style={{ marginTop: '5em' }} hidden="true">
           <span className="green-text">{`Happy`}</span>
           <span className="yellow-text">{`Thoughts`}</span>
           {` is part of `}
@@ -226,9 +226,16 @@ const HomePage = () => {
             </a>
           ))}
         </div>
-        <div className="social-wrapper">
-          <span className="donate-button">Donate</span>
-        </div>
+        <a
+          href="https://pages.donately.com/happythoughts/"
+          target="_blank"
+          rel="noreferrer"
+          className="donate-button-anchor"
+        >
+          <div className="social-wrapper">
+            <span className="donate-button">Donate</span>
+          </div>
+        </a>
         <h2 className="yellow-text" style={{ marginTop: '2em' }}>
           What are my donations used for?
         </h2>
