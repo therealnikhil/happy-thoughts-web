@@ -43,8 +43,12 @@ const AboutPage = () => {
         <p className="left">Stay tuned.</p>
         <p className="left">Sincerely,</p>
         <pre className="left">
-          <span className="green-text">Nikhil</span>
-          <span className="yellow-text">{`\nCreator of HappyThoughts`}</span>
+          Nikhil
+          <span className="yellow-text">{`\nCreator of HappyThoughts\n`}</span>
+          <a
+            href="mailto:nikhil@happythoughts.app"
+            className="external-link"
+          >{`nikhil@happythoughts.app`}</a>
         </pre>
       </Section>
     </ProductLayout>
