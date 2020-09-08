@@ -10,8 +10,7 @@ import insight from 'src/assets/insight.png'
 import post from 'src/assets/post.png'
 import fb from 'src/assets/fb.png'
 import twitter from 'src/assets/twitter.png'
-import snapchat from 'src/assets/snapchat.png'
-import linkedin from 'src/assets/linkedin.png'
+import insta from 'src/assets/insta.png'
 import CheckList from 'src/components/CheckList/CheckList'
 import CountDown from 'src/components/CountDown/CountDown'
 
@@ -45,7 +44,6 @@ const sections = [
     list: [
       'View your moods by time of day, day of week, months of year',
       'Use the mood timeline to recognize patterns in your mood, when your moods peak or get low',
-      'A calendar view of your habits',
       'See your longest streaks for motivation',
       'Compare your moods before and after starting habits',
     ],
@@ -54,45 +52,31 @@ const sections = [
     name: 'Resources',
     image: post,
     list: [
+      'View resources with actionable habits to start',
+      'Find resources to motivate you on your journey',
       'Receive additional mental health resources from us and the community',
       'Favorite the ones you want to keep and view your favorites during tough times',
       'Share things you find helpful, so others may benefit too!',
     ],
-  },
-  {
-    name: 'Putting It All Together - Dashboard',
-    image: null,
-    list: [
-      'Quote of the day to keep you motivated',
-      'See how many more journal logs needed to reach your daily goal',
-      'See how many checkins left to complete your habits for the day',
-      'Gather interesting insights that quantify real improvement',
-      'View the top voted resources of the day',
-    ],
-  },
+  }
 ]
 
 const social = [
   {
+    name: 'Instagram',
+    logo: insta,
+    link: 'https://www.instagram.com/happythoughtscentral',
+  },
+  {
     name: 'Facebook',
     logo: fb,
-    link: '#',
+    link: 'https://www.facebook.com/happythoughtsapp/',
   },
   {
     name: 'Twitter',
     logo: twitter,
-    link: '#',
-  },
-  {
-    name: 'LinkedIn',
-    logo: linkedin,
-    link: '#',
-  },
-  {
-    name: 'SnapChat',
-    logo: snapchat,
-    link: '#',
-  },
+    link: 'https://twitter.com/ht_app',
+  }
 ]
 
 const donationsGoToList = [
